@@ -1,0 +1,252 @@
+﻿<Window x:Class="homework2_metro_style_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homework2_metro_style_UI"
+        mc:Ignorable="d"
+        FontSize="28"
+        Title="MainWindow" Height="768" Width="1024">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF197F78" Offset="0.604"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="40"/>
+            <ColumnDefinition  Width ="1*"/>
+            <ColumnDefinition  Width ="0.5*"/>
+            <ColumnDefinition  Width = "0.5*"/>
+            <ColumnDefinition Width ="40"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+
+        </Grid.RowDefinitions>
+
+        <Label 
+            Grid.Row="1" Grid.Column="1" FontSize="50" 
+            FontFamily="Segoe UI Light" Margin="0 0 0 20" 
+            Foreground="White">
+            Start
+        </Label>
+
+        <WrapPanel Grid.Row="2" Grid.Column="1"
+                   Margin="0 0 10 0">
+            <Button Name="internetExplorer" 
+                Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    FontSize="60"
+                    Foreground="White" 
+                    Background="#FF6DCFE2">
+                e
+            </Button>
+            <Button Name="shopBtn"
+                Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Background="Orange"
+                    Foreground="White">
+                Shop
+            </Button>
+            <Button Name="googleBtn"
+                Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="White"
+                    Background="#FF46DE49">
+                Google
+            </Button>
+            <Button Name ="chromeBtn"
+                Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DarkRed">
+                Chrome
+            </Button>
+
+            <Button Name ="settingsBtn"
+                Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Aqua">
+                Settings
+            </Button>
+            <Button Name="twitterBtn"
+                Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DeepSkyBlue">
+                Twitter
+            </Button>
+
+            <Button Name="excelBtn"
+                Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Green">
+                Excel
+            </Button>
+            <Button Name="wordBtn"
+                Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DarkBlue">
+                Word
+            </Button>
+            <Button Name="powerPointBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="LightCoral">
+                Power Point
+            </Button>
+
+            <Button Name="gamesBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Aquamarine">
+                Games
+            </Button>
+            <Button Name="emailBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Chartreuse">
+                E-mail
+            </Button>
+            <Button Name="filesPointBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Coral">
+                Files explorer
+            </Button>
+
+            <Button Name="adobeBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Red">
+                Adobe
+            </Button>
+            <Button Name="esetBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="SeaGreen">
+                Eset
+            </Button>
+
+        </WrapPanel>
+
+
+        <WrapPanel Grid.Row="2" Grid.Column="2"
+                   Margin="0 0 10 0">
+            <Button Name="paintBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DarkCyan">
+                Paint
+            </Button>
+            <Button Name="steamBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="CadetBlue">
+                Steam
+            </Button>
+            <Button Name="xboxBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="ForestGreen">
+                Xbox
+            </Button>
+            <Button Name="newsBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Crimson">
+                News
+            </Button>
+            <Button Name="photosBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Fuchsia">
+                Photos
+            </Button>
+            <Button Name="videoBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DarkTurquoise">
+                Videos
+            </Button>
+            <Button Name="hpBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Cyan">
+                HP
+            </Button>
+            <Button Name="musicBtn" 
+                    Height="100" Width="100"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DarkMagenta">
+                Music
+            </Button>
+
+        </WrapPanel>
+
+
+        <WrapPanel Grid.Row="2" Grid.Column="3"
+                   Margin="10 0 10 0">
+            <Button Name="spotifyPointBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Green">
+                Spotify
+            </Button>
+            <Button Name="photoshopBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="DarkBlue">
+                Photoshop
+            </Button>
+            <Button Name="finacesPointBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Indigo">
+                Finances
+            </Button>
+            <Button Name="epicStoreBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="white"
+                    Background="Black">
+                Epic Store
+            </Button>
+            <Button Name="netflixBtn" 
+                    Height="100" Width="210"
+                    Margin="5 5 5 5"
+                    Foreground="Red"
+                    Background="Black">
+                Netflix
+            </Button>
+        </WrapPanel>
+
+    </Grid>
+</Window>
