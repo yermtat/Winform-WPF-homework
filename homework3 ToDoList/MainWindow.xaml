@@ -1,0 +1,76 @@
+﻿<Window x:Class="homework3_ToDoList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homework3_ToDoList"
+        mc:Ignorable="d" FontSize="15"
+        Title="To do list" Height="450" Width="600">
+    
+    <Grid Margin="10 0 10 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.08*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock 
+                Grid.Column="0" 
+                Grid.Row="0">
+                Task
+            </TextBlock>
+            <TextBlock 
+                Grid.Column="0" 
+                Grid.Row="1">
+                Due
+            </TextBlock>
+
+            <TextBox 
+                Name ="taskTextBox"
+                Grid.Column="1"
+                Grid.Row="0"/>
+
+            <DatePicker
+                Name ="dueTime"
+                Grid.Column="1"
+                Grid.Row="1"/>
+
+            <Button
+                Name ="saveBtn"
+                Content="Save"
+                Grid.Column="0"
+                Grid.Row="2"
+                Width="50"
+                Height="auto"
+                Margin="0 5 0 0" Click="saveBtn_Click"/>
+
+
+        </Grid>
+
+        <ListBox
+           Name="taskLisBox"
+           Grid.Row="1"/>
+
+        <Button 
+            Content="Delete"
+            Name="deleteBtn"
+            HorizontalAlignment="left"
+            Grid.Row="2"
+            Height="auto"
+            Width="50" Click="deleteBtn_Click"/>
+    </Grid>
+
+
+</Window>
