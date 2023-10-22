@@ -1,0 +1,42 @@
+﻿<Window x:Class="homework4_ImdbAPI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homework4_ImdbAPI"
+        mc:Ignorable="d" FontSize="20"
+        Title="IMBD info" Height="450" Width="800">
+
+    
+    <Grid Margin="5 5 5 5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.15*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0"
+                Grid.Column="1"
+                Name ="searchBtn"
+                Content="Search" Click="searchBtn_Click">
+            
+        </Button>
+
+        <TextBox Grid.Row="0"
+                 Grid.Column="0"
+                 Name ="movieTitleTextBox">
+            
+        </TextBox>
+
+        <ListBox Grid.Row="1"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 Margin="0 5 0 0"
+                 Name ="movieList">
+            
+        </ListBox>
+    </Grid>
+</Window>
