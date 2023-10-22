@@ -16,16 +16,22 @@ using System.Windows.Shapes;
 namespace homework4_ImdbAPI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for moviePage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class moviePage : Page
     {
-        public MainWindow()
+        public moviePage(Result movie)
         {
             InitializeComponent();
 
+            movieTitle.Content = movie.Title;
+            yearLabel.Content = movie.Year;
+
+            runningTimeLabel.Content = movie.RunningTimeInMinutes;
+
+            actorsList.ItemsSource = movie.Principals;
+
+            poster.Source = new BitmapImage(new Uri(movie.Image.Url));
         }
-
-
     }
 }

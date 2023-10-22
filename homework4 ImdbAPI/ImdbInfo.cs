@@ -86,7 +86,7 @@ public class Result
 
     public override string ToString()
     {
-        return $"{Title} — {Year}";
+        return $"{Title} — {Year} — {TitleType}";
     }
 }
 
@@ -181,6 +181,11 @@ public class Principal
 
     [JsonPropertyName("_as")]
     public string As { get; set; }
+
+    public override string ToString()
+    {
+        return $"{Name} as {Characters[0]}";
+    }
 }
 
 public class Role
