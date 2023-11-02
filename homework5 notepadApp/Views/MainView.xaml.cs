@@ -27,23 +27,23 @@ namespace homework5_notepadApp.Views
             DataContext = new MainViewModel();
         }
 
-        private void newWindow_Click(object sender, RoutedEventArgs e)
+        private void NewWindow_Click(object sender, RoutedEventArgs e)
         {
             MainView window = new MainView();
             window.Show();
         }
 
-        private void zoomIncrease_Click(object sender, RoutedEventArgs e)
+        private void ZoomIncrease_Click(object sender, RoutedEventArgs e)
         {
             textBox.FontSize++;
         }
 
-        private void zoomDecrease_Click(object sender, RoutedEventArgs e)
+        private void ZoomDecrease_Click(object sender, RoutedEventArgs e)
         {
             textBox.FontSize--;
         }
 
-        private void zoomDefault_Click(object sender, RoutedEventArgs e)
+        private void ZoomDefault_Click(object sender, RoutedEventArgs e)
         {
             textBox.FontSize= 12;
         }

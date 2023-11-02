@@ -24,7 +24,7 @@ public static class FileOperationsService
         using FileStream fs = new(fileName, FileMode.Open);
         using StreamReader sr = new StreamReader(fs);
 
-        NotepadModel nt = new NotepadModel() { notePadName= fileName, Text = sr.ReadToEnd() };
+        NotepadModel nt = new NotepadModel() { NotePadName= fileName, Text = sr.ReadToEnd() };
 
         return nt;
     }

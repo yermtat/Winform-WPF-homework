@@ -34,7 +34,7 @@ namespace homework1_calculator
             {
                 NumbersTextBox.Text = NumbersTextBox.Text.Substring(1);
             }
- 
+
             else
             {
                 NumbersTextBox.Text = '-' + NumbersTextBox.Text;
@@ -51,9 +51,9 @@ namespace homework1_calculator
 
         private void OperationButton_Click(object sender, EventArgs e)
         {
-            Button button = sender as Button;           
+            Button button = sender as Button;
 
-            if (ExpressionTextBox.Text != "0" 
+            if (ExpressionTextBox.Text != "0"
                 && result != Convert.ToDouble(NumbersTextBox.Text))
                 ResultButton.PerformClick();
 
@@ -67,7 +67,7 @@ namespace homework1_calculator
 
         private void ResultButton_Click(object sender, EventArgs e)
         {
-            
+
             switch (operation)
             {
                 case "+":
@@ -92,7 +92,7 @@ namespace homework1_calculator
             ExpressionTextBox.Text += NumbersTextBox.Text;
             NumbersTextBox.Text = result.ToString();
 
-            
+
         }
 
         private void CEButton_Click(object sender, EventArgs e)
